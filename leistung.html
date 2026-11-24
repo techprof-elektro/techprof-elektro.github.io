@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leistung berechnen – Wechselstrom 230 V und Drehstrom 400 V mit cos φ</title>
+<meta name="description" content="Elektrische Leistung und Strom berechnen: Gleichstrom, Wechselstrom und Drehstrom mit Leistungsfaktor cos φ. Formel, Beispiel und Tabelle typischer Verbraucher.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="hwrap">
+<a class="logo" href="index.html">⚡ tech prof <span>électrique</span></a>
+<nav>
+<a href="index.html">Start</a>
+<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a>
+<a href="leistung.html">Leistung</a>
+<a href="spannungsfall-querschnitt.html">Spannungsfall</a>
+<a href="stromkosten.html">Stromkosten</a>
+<a href="ueber-mich.html">Über mich</a>
+</nav></div></header>
+
+<main><article>
+<h1>Leistung und Strom berechnen – Wechselstrom und Drehstrom</h1>
+<p class="sub">Aus Strom wird Leistung – oder aus der Leistung der Strom, der Sicherung und Leitung bestimmen muss.</p>
+<div class="calc"><h2>Rechner: Leistung &amp; Strom</h2>
+<div class="frow">
+<div class="field"><label>System</label><select id="lSys">
+<option value="dc">Gleichstrom (DC)</option>
+<option value="ac" selected>Wechselstrom 230 V</option>
+<option value="ds">Drehstrom 400 V</option></select></div>
+<div class="field"><label>Spannung U (Volt)</label><input id="lU" type="number" step="any" value="230"></div>
+<div class="field"><label>Leistungsfaktor cos φ</label><input id="lCos" type="number" step="any" value="1"></div>
+</div>
+<div class="frow">
+<div class="field"><label>Strom I (Ampere) – oder leer lassen</label><input id="lI" type="number" step="any" placeholder="z. B. 16"></div>
+<div class="field"><label>Leistung P (Watt) – oder leer lassen</label><input id="lP" type="number" step="any" placeholder="z. B. 3680"></div>
+</div>
+<button class="btn" onclick="calcLeistung()">Berechnen</button>
+<div class="res" id="lRes"></div>
+<p class="small">Bei Gleichstrom cos φ = 1 lassen. Typische cos-φ-Werte: Heizung 1,0 · Motor 0,75–0,9 · LED-Treiber 0,5–0,95.</p></div>
+
+<h2>Die Formeln</h2>
+<div class="formel">DC: P = U · I &nbsp;|&nbsp; AC: P = U · I · cos φ &nbsp;|&nbsp; Drehstrom: P = √3 · U · I · cos φ</div>
+<p>Der Unterschied zwischen den Systemen ist der Kern der Sache: Beim Drehstrom steht die verkettete Spannung 400 V zwischen den Außenleitern, und der Faktor √3 (≈ 1,73) fasst die drei phasenverschobenen Ströme zusammen. Wer beim Drehstrom mit 230 V oder ohne √3 rechnet, liegt um fast das Doppelte daneben – ein klassischer Prüfungs- und Praxisfehler.</p>
+<h2>Durchgerechnetes Beispiel: Drehstrommotor</h2>
+<p>Ein Motor am Drehstromnetz 400 V zieht 12 A bei einem cos φ von 0,85. Seine Wirkleistung:</p>
+<ul>
+<li>P = √3 · U · I · cos φ = 1,73 · 400 V · 12 A · 0,85 = <b>7067 W ≈ 7,1 kW</b></li>
+<li>Scheinleistung S = √3 · U · I = 1,73 · 400 · 12 = <b>8314 VA ≈ 8,3 kVA</b></li>
+</ul>
+<p>Die Scheinleistung ist das, was Leitung und Sicherung tatsächlich „sehen". Deshalb wird bei Motoren nie allein mit der Wellenleistung in kW geplant, sondern immer mit Strom und cos φ vom Typenschild.</p>
+<h2>Was ein 16-A-Stromkreis wirklich hergibt</h2>
+<table>
+<tr><th>System</th><th>Rechnung</th><th>Max. Leistung</th></tr>
+<tr><td>Wechselstrom 230 V, cos φ 1</td><td>230 V · 16 A</td><td>3680 W</td></tr>
+<tr><td>Wechselstrom 230 V, cos φ 0,8</td><td>230 V · 16 A · 0,8</td><td>2944 W</td></tr>
+<tr><td>Drehstrom 400 V, cos φ 1</td><td>√3 · 400 V · 16 A</td><td>11 085 W</td></tr>
+<tr><td>Drehstrom 400 V, cos φ 0,85</td><td>√3 · 400 V · 16 A · 0,85</td><td>9422 W</td></tr>
+</table>
+<p class="small">Vereinfachte Rechnung ohne Gleichzeitigkeit und ohne Spannungsfall. In der Praxis kommen die Auslöse-Charakteristik der Sicherung und die Verlegeart der Leitung dazu.</p>
+<h2>Praxis-Tipps</h2>
+<ul>
+<li><b>Typenschild schlägt Katalog:</b> Der auf dem Typenschild angegebene Strom gilt – nicht der aus der Nennleistung zurückgerechnete, weil Wirkungsgrad und cos φ bereits enthalten sind.</li>
+<li><b>Anlaufstrom beachten:</b> Motoren ziehen beim Anlauf das 5- bis 8-Fache des Nennstroms. Die Leistung bleibt gleich, aber die Sicherung muss den Anlauf überstehen (Charakteristik C oder D statt B).</li>
+<li><b>Weiter geht es mit dem Querschnitt:</b> Aus dem Strom folgt die Leitung – mit dem <a href="spannungsfall-querschnitt.html">Spannungsfall-Rechner</a> prüfen Sie Länge und Querschnitt.</li>
+</ul>
+<div class="faq">
+<h2>Häufige Fragen</h2>
+<h3>Was ist der Unterschied zwischen Wirk- und Scheinleistung?</h3>
+<p>Die Wirkleistung P (Watt) leistet die Arbeit. Die Scheinleistung S (Voltampere) ist das Produkt aus Spannung und Strom und belastet Leitungen und Trafos. Ihr Verhältnis ist der cos φ. Blindleistung Q pendelt nur zwischen Erzeuger und Verbraucher.</p>
+<h3>Warum steht auf Motoren kW und auf Generatoren kVA?</h3>
+<p>Beim Motor zählt die abgegebene mechanische Leistung in kW. Der Generator (und der Trafo) muss dagegen die volle Scheinleistung in kVA bereitstellen, egal wie gut der cos φ der Last ist.</p>
+<h3>Welchen cos φ hat ein Haushalt?</h3>
+<p>Gemischt: Heizgeräte 1,0, moderne LED-Treiber oft 0,5–0,7, Kühlschrankmotoren um 0,7–0,85. Für eine grobe Hausanschluss-Abschätzung wird häufig mit 0,9 gerechnet.</p>
+</div>
+<div class="warn"><b>Wichtiger Hinweis:</b> Dieser Rechner liefert Richtwerte für Ausbildung und erste Einschätzung. Er ersetzt keine normgerechte Planung und keine Arbeit durch eine qualifizierte Elektrofachkraft. Maßgeblich sind immer die aktuellen DIN-VDE-Normen, die Angaben der Hersteller und die örtlichen TAB des Netzbetreibers. Arbeiten an elektrischen Anlagen dürfen nur von Elektrofachkräften ausgeführt werden.</div></article></main>
+<footer><div class="fwrap">
+<div class="col"><h4>Rechner</h4>
+<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><br>
+<a href="leistung.html">Leistung &amp; Strom</a><br>
+<a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><br>
+<a href="stromkosten.html">Stromkosten</a></div>
+<div class="col"><h4>Projekt</h4>
+<a href="ueber-mich.html">Über mich</a><br>
+<a href="kontakt.html">Kontakt</a><br>
+<a href="https://www.facebook.com/profile.php?id=61558968189552" rel="noopener">Facebook-Seite</a><br>
+<a href="https://www.youtube.com/@tech-prof-electric" rel="noopener">YouTube-Kanal</a></div>
+<div class="col"><h4>Rechtliches</h4>
+<a href="impressum.html">Impressum</a><br>
+<a href="datenschutz.html">Datenschutz</a></div>
+<div class="col"><h4>Hinweis</h4>
+<span style="font-size:14px">Alle Rechner dienen der Orientierung und ersetzen keine Planung durch eine Elektrofachkraft nach DIN VDE.</span></div>
+</div></footer>
+<script src="rechner.js"></script>
+</body></html>

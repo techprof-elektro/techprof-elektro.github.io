@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ohmsches Gesetz Rechner – U, I, R und P berechnen mit Formel und Beispiel</title>
+<meta name="description" content="Ohmsches Gesetz online berechnen: Spannung, Strom, Widerstand und Leistung aus zwei Werten. Mit Formel, durchgerechnetem Beispiel, Tabelle und Praxis-Tipps für Elektriker und Azubis.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="hwrap">
+<a class="logo" href="index.html">⚡ tech prof <span>électrique</span></a>
+<nav>
+<a href="index.html">Start</a>
+<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a>
+<a href="leistung.html">Leistung</a>
+<a href="spannungsfall-querschnitt.html">Spannungsfall</a>
+<a href="stromkosten.html">Stromkosten</a>
+<a href="ueber-mich.html">Über mich</a>
+</nav></div></header>
+
+<main><article>
+<h1>Ohmsches Gesetz – Rechner mit Formel und Praxisbeispiel</h1>
+<p class="sub">Zwei Werte eingeben, der Rechner ermittelt die beiden anderen: Spannung U, Strom I, Widerstand R und Leistung P.</p>
+<div class="calc"><h2>Rechner: Ohmsches Gesetz</h2>
+<div class="frow">
+<div class="field"><label>Spannung U (Volt)</label><input id="oU" type="number" step="any" placeholder="z. B. 230"></div>
+<div class="field"><label>Strom I (Ampere)</label><input id="oI" type="number" step="any" placeholder="z. B. 10"></div>
+<div class="field"><label>Widerstand R (Ohm)</label><input id="oR" type="number" step="any" placeholder="z. B. 23"></div>
+<div class="field"><label>Leistung P (Watt)</label><input id="oP" type="number" step="any" placeholder="z. B. 2300"></div>
+</div>
+<button class="btn" onclick="calcOhm()">Berechnen</button>
+<div class="res" id="oRes"></div></div>
+
+<h2>Die Formel</h2>
+<div class="formel">U = R · I &nbsp;&nbsp;|&nbsp;&nbsp; I = U / R &nbsp;&nbsp;|&nbsp;&nbsp; R = U / I &nbsp;&nbsp;|&nbsp;&nbsp; P = U · I</div>
+<p>Das Ohmsche Gesetz beschreibt den Zusammenhang zwischen Spannung, Strom und Widerstand in einem Stromkreis. Es wurde nach Georg Simon Ohm benannt, der den Zusammenhang 1826 veröffentlichte. Für die Praxis kommen zwei Leistungsformeln dazu: <b>P = U · I</b> sowie die Ersatzformen <b>P = I² · R</b> und <b>P = U² / R</b>, je nachdem, welche zwei Werte bekannt sind.</p>
+<h2>Durchgerechnetes Beispiel</h2>
+<p>Ein Heizlüfter ist an 230 V angeschlossen und zieht 8,7 A. Wie groß ist sein Widerstand, welche Leistung nimmt er auf?</p>
+<ul>
+<li>R = U / I = 230 V / 8,7 A = <b>26,4 Ω</b></li>
+<li>P = U · I = 230 V · 8,7 A = <b>2001 W ≈ 2 kW</b></li>
+</ul>
+<p>Probe mit der Ersatzformel: P = U² / R = 230² / 26,4 = 52 900 / 26,4 ≈ 2004 W – kleine Rundungsdifferenz, gleiches Ergebnis. Genau so prüft man in der Prüfung und auf der Baustelle, ob man sich verrechnet hat.</p>
+<h2>Typische Werte aus der Praxis</h2>
+<table>
+<tr><th>Verbraucher</th><th>Spannung</th><th>Strom</th><th>Leistung</th></tr>
+<tr><td>LED-Lampe</td><td>230 V</td><td>0,04 A</td><td>9 W</td></tr>
+<tr><td>Wasserkocher</td><td>230 V</td><td>8,7 A</td><td>2000 W</td></tr>
+<tr><td>Waschmaschine (Heizung)</td><td>230 V</td><td>10 A</td><td>2300 W</td></tr>
+<tr><td>Glühlampe (alt)</td><td>230 V</td><td>0,26 A</td><td>60 W</td></tr>
+<tr><td>Handy-Ladegerät</td><td>230 V</td><td>0,09 A</td><td>20 W</td></tr>
+</table>
+<h2>Die drei Fehler, die am häufigsten passieren</h2>
+<ol>
+<li><b>Leistung mit Widerstand verwechseln:</b> Auf dem Typenschild steht fast immer die Leistung in Watt, nicht der Widerstand. Erst über P = U · I kommt man zum Strom – und der Strom bestimmt Sicherung und Querschnitt.</li>
+<li><b>Kaltwiderstand vergessen:</b> Eine Glühlampe hat kalt nur etwa ein Zehntel ihres Betriebswiderstands. Deshalb ist der Einschaltstrom kurzzeitig viel höher – das Ohmsche Gesetz gilt immer, aber mit dem Widerstand des jeweiligen Zustands.</li>
+<li><b>Wechselstrom wie Gleichstrom rechnen:</b> Bei Motoren und Netzteilen kommt der Leistungsfaktor cos φ dazu. Dafür gibt es den <a href="leistung.html">Leistungs-Rechner</a> auf dieser Seite.</li>
+</ol>
+<div class="faq">
+<h2>Häufige Fragen</h2>
+<h3>Gilt das Ohmsche Gesetz auch bei Wechselstrom?</h3>
+<p>Für rein ohmsche Verbraucher wie Heizungen und Glühlampen ja, direkt. Bei Spulen und Kondensatoren (Motoren, Vorschaltgeräte) muss der Scheinwiderstand und der cos φ berücksichtigt werden – die Grundbeziehung bleibt aber der Ausgangspunkt jeder Rechnung.</p>
+<h3>Warum wird ein Kabel warm?</h3>
+<p>Jedes Kabel hat einen Widerstand. Die Verlustleistung P = I² · R verwandelt sich vollständig in Wärme. Verdoppelt sich der Strom, vervierfacht sich die Wärme – deshalb ist der richtige Querschnitt eine Sicherheitsfrage, siehe <a href="spannungsfall-querschnitt.html">Spannungsfall-Rechner</a>.</p>
+<h3>Was ist der Unterschied zwischen Widerstand und Leistung?</h3>
+<p>Der Widerstand (Ohm) beschreibt, wie stark ein Bauteil den Strom bremst. Die Leistung (Watt) beschreibt, wie viel Energie pro Sekunde umgesetzt wird. Beide hängen über U und I zusammen – der Rechner oben rechnet in alle Richtungen.</p>
+</div>
+<div class="warn"><b>Wichtiger Hinweis:</b> Dieser Rechner liefert Richtwerte für Ausbildung und erste Einschätzung. Er ersetzt keine normgerechte Planung und keine Arbeit durch eine qualifizierte Elektrofachkraft. Maßgeblich sind immer die aktuellen DIN-VDE-Normen, die Angaben der Hersteller und die örtlichen TAB des Netzbetreibers. Arbeiten an elektrischen Anlagen dürfen nur von Elektrofachkräften ausgeführt werden.</div></article></main>
+<footer><div class="fwrap">
+<div class="col"><h4>Rechner</h4>
+<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><br>
+<a href="leistung.html">Leistung &amp; Strom</a><br>
+<a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><br>
+<a href="stromkosten.html">Stromkosten</a></div>
+<div class="col"><h4>Projekt</h4>
+<a href="ueber-mich.html">Über mich</a><br>
+<a href="kontakt.html">Kontakt</a><br>
+<a href="https://www.facebook.com/profile.php?id=61558968189552" rel="noopener">Facebook-Seite</a><br>
+<a href="https://www.youtube.com/@tech-prof-electric" rel="noopener">YouTube-Kanal</a></div>
+<div class="col"><h4>Rechtliches</h4>
+<a href="impressum.html">Impressum</a><br>
+<a href="datenschutz.html">Datenschutz</a></div>
+<div class="col"><h4>Hinweis</h4>
+<span style="font-size:14px">Alle Rechner dienen der Orientierung und ersetzen keine Planung durch eine Elektrofachkraft nach DIN VDE.</span></div>
+</div></footer>
+<script src="rechner.js"></script>
+</body></html>

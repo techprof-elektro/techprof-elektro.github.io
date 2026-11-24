@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spannungsfall berechnen & Kabelquerschnitt wählen – Kupfer und Aluminium, DIN VDE</title>
+<meta name="description" content="Spannungsfall in Volt und Prozent berechnen und den passenden Kabelquerschnitt für Kupfer und Aluminium finden – mit Formel, Beispiel, Belastbarkeits-Richtwerten und DIN-VDE-Hinweisen.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="hwrap">
+<a class="logo" href="index.html">⚡ tech prof <span>électrique</span></a>
+<nav>
+<a href="index.html">Start</a>
+<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a>
+<a href="leistung.html">Leistung</a>
+<a href="spannungsfall-querschnitt.html">Spannungsfall</a>
+<a href="stromkosten.html">Stromkosten</a>
+<a href="ueber-mich.html">Über mich</a>
+</nav></div></header>
+
+<main><article>
+<h1>Spannungsfall berechnen und Kabelquerschnitt wählen</h1>
+<p class="sub">Der Rechner, den jeder Elektriker auf der Baustelle braucht: Spannungsfall in Volt und Prozent – plus Querschnitts-Empfehlung für Ihren Grenzwert.</p>
+<div class="calc"><h2>Rechner: Spannungsfall &amp; Querschnitt</h2>
+<div class="frow">
+<div class="field"><label>System</label><select id="fSys">
+<option value="ac" selected>Wechselstrom (1-phasig)</option>
+<option value="ds">Drehstrom (3-phasig)</option>
+<option value="dc">Gleichstrom (DC)</option></select></div>
+<div class="field"><label>Material</label><select id="fMat">
+<option value="56" selected>Kupfer (κ = 56)</option>
+<option value="35">Aluminium (κ = 35)</option></select></div>
+<div class="field"><label>Spannung U (Volt)</label><input id="fU" type="number" step="any" value="230"></div>
+</div>
+<div class="frow">
+<div class="field"><label>Leitungslänge einfach (Meter)</label><input id="fL" type="number" step="any" placeholder="z. B. 25"></div>
+<div class="field"><label>Strom I (Ampere)</label><input id="fI" type="number" step="any" placeholder="z. B. 16"></div>
+<div class="field"><label>cos φ (nur AC/Drehstrom)</label><input id="fCos" type="number" step="any" value="1"></div>
+</div>
+<div class="frow">
+<div class="field"><label>Vorhandener Querschnitt</label><select id="fA">
+<option>1.5</option><option selected>2.5</option><option>4</option><option>6</option><option>10</option><option>16</option><option>25</option><option>35</option><option>50</option><option>70</option><option>95</option><option>120</option></select></div>
+<div class="field"><label>Max. Spannungsfall</label><select id="fLim">
+<option value="3" selected>3 % (Richtwert ab Zähler, DIN 18015)</option>
+<option value="5">5 % (andere Verbraucher, DIN VDE 0100-520)</option></select></div>
+</div>
+<button class="btn" onclick="calcFall()">Berechnen</button>
+<div class="res" id="fRes"></div>
+<p class="small">Die Länge ist die einfache Strecke (Hinweg). Der Rückweg ist in der Formel bereits enthalten (Faktor 2 bzw. √3).</p></div>
+
+<h2>Die Formeln</h2>
+<div class="formel">Wechselstrom/DC: ΔU = 2 · L · I · cos φ / (κ · A) &nbsp;|&nbsp; Drehstrom: ΔU = √3 · L · I · cos φ / (κ · A)</div>
+<p>Jede Leitung ist ein Widerstand. Fließt Strom, fällt an diesem Widerstand Spannung ab – sie fehlt am Verbraucher. Der Leiterwiderstand wächst mit der Länge und sinkt mit dem Querschnitt; der Werkstoff geht über die Leitfähigkeit κ ein (Kupfer 56, Aluminium 35 m/(Ω·mm²)). Bei Wechselstrom wirkt nur der mit cos φ gewichtete Wirkanteil vereinfacht in dieser Formel; der Blindanteil über die Reaktanz wird bei kleinen Querschnitten vernachlässigt – so rechnen auch die gängigen Tabellenwerke für die Gebäudeinstallation.</p>
+<h2>Durchgerechnetes Beispiel</h2>
+<p>Eine Steckdosenleitung in Kupfer, 25 m einfach, 16 A, 230 V, Querschnitt 2,5 mm², cos φ = 1:</p>
+<ul>
+<li>ΔU = 2 · 25 m · 16 A / (56 · 2,5 mm²) = 800 / 140 = <b>5,71 V</b></li>
+<li>In Prozent: 5,71 / 230 = <b>2,48 %</b> – innerhalb der 3-%-Grenze, am Verbraucher bleiben 224,3 V.</li>
+<li>Mit 1,5 mm² wären es 9,52 V = 4,14 % – zu viel. Genau deshalb ist „1,5 reicht doch" bei langen Strecken ein teurer Irrtum.</li>
+</ul>
+<h2>Welche Grenzwerte gelten?</h2>
+<p>Als Richtwerte haben sich in Deutschland etabliert: <b>max. 3 %</b> Spannungsfall vom Zähler bis zur Verbrauchsstelle (DIN 18015-1) und die Empfehlung der DIN VDE 0100-520 von <b>3 % für Beleuchtungsstromkreise bzw. 5 % für andere Verbraucher</b> ab dem Hausanschluss. Diese Werte sind Empfehlungen der Normung, keine physikalischen Gesetze – aber sie sind das, woran sich Planung, Prüfung und im Streitfall auch Gutachter orientieren. Dazu kommt: Unabhängig vom Spannungsfall muss der Querschnitt immer auch zur Strombelastbarkeit und zum Kurzschlussschutz passen.</p>
+<h2>Belastbarkeit – vereinfachte Richtwerte</h2>
+<table>
+<tr><th>Querschnitt</th><th>1,5</th><th>2,5</th><th>4</th><th>6</th><th>10</th><th>16</th><th>25</th><th>35</th><th>50</th></tr>
+<tr><td>Richtwert in A</td><td>15,5</td><td>21</td><td>28</td><td>36</td><td>49</td><td>64</td><td>83</td><td>103</td><td>125</td></tr>
+</table>
+<p class="small">Vereinfachte Richtwerte nach DIN VDE 0298-4 für Verlegeart B2 (Rohr auf Wand), zwei belastete Adern, PVC-Isolierung, ohne Korrekturfaktoren für Häufung und Umgebungstemperatur. Für eine reale Auslegung sind Verlegeart, Häufung, Temperatur und die Abschaltbedingungen nach DIN VDE 0100-430/0100-410 gesondert zu prüfen.</p>
+<div class="tip"><b>Praxis-Regel:</b> Erst den Strom aus der Leistung bestimmen (<a href="leistung.html">Leistungs-Rechner</a>), dann die Belastbarkeit prüfen, dann den Spannungsfall rechnen – und den größeren der beiden Querschnitte nehmen. Bei Längen über 20 m entscheidet fast immer der Spannungsfall, nicht die Belastbarkeit.</div>
+<h2>Die drei teuersten Fehler</h2>
+<ol>
+<li><b>Länge verdoppelt eingeben:</b> Die Formel enthält den Rückweg schon. Wer Hin- und Rückweg als Länge einträgt, bekommt den doppelten Spannungsfall und kauft einen Querschnitt zu groß.</li>
+<li><b>Aluminium wie Kupfer rechnen:</b> Aluminium leitet rund 40 % schlechter (κ 35 statt 56). Dieselbe Strecke braucht in Alu etwa den 1,6-fachen Querschnitt.</li>
+<li><b>Spannungsfall nur bis zur Verteilung rechnen:</b> Die 3 % gelten bis zur letzten Steckdose, nicht bis zum Unterverteiler. Lange Endstromkreise nach der Verteilung zählen voll mit.</li>
+</ol>
+<div class="faq">
+<h2>Häufige Fragen</h2>
+<h3>Warum darf der Spannungsfall nicht zu groß werden?</h3>
+<p>Weil den Geräten Spannung fehlt: Motoren verlieren überproportional Drehmoment (es geht mit dem Quadrat der Spannung), Lampen werden dunkler, Elektronik steigt aus. Gleichzeitig wird die fehlende Energie als Wärme in der Leitung frei – bezahlt, aber nicht genutzt.</p>
+<h3>Gilt die 3-%-Grenze auch für die Wallbox?</h3>
+<p>Für Ladeeinrichtungen wird in der Praxis besonders sorgfältig geplant, weil 11 kW über Stunden Dauerlast sind. Hier zählen Spannungsfall, Belastbarkeit und Dauerlastfestigkeit zusammen; viele Planer legen Wallbox-Zuleitungen bewusst auf 5 mm² oder 6 mm² aus, auch wenn 2,5 mm² rechnerisch knapp reichen würde.</p>
+<h3>Was ist bei Gleichstrom (Photovoltaik) anders?</h3>
+<p>Die Formel entspricht dem Wechselstrom-Fall ohne cos φ (cos φ = 1). Auf der DC-Seite von PV-Anlagen wird meist mit max. 1 % Spannungsfall geplant, weil jeder Prozentpunkt direkt Ertrag kostet.</p>
+</div>
+<div class="warn"><b>Wichtiger Hinweis:</b> Dieser Rechner liefert Richtwerte für Ausbildung und erste Einschätzung. Er ersetzt keine normgerechte Planung und keine Arbeit durch eine qualifizierte Elektrofachkraft. Maßgeblich sind immer die aktuellen DIN-VDE-Normen, die Angaben der Hersteller und die örtlichen TAB des Netzbetreibers. Arbeiten an elektrischen Anlagen dürfen nur von Elektrofachkräften ausgeführt werden.</div></article></main>
+<footer><div class="fwrap">
+<div class="col"><h4>Rechner</h4>
+<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><br>
+<a href="leistung.html">Leistung &amp; Strom</a><br>
+<a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><br>
+<a href="stromkosten.html">Stromkosten</a></div>
+<div class="col"><h4>Projekt</h4>
+<a href="ueber-mich.html">Über mich</a><br>
+<a href="kontakt.html">Kontakt</a><br>
+<a href="https://www.facebook.com/profile.php?id=61558968189552" rel="noopener">Facebook-Seite</a><br>
+<a href="https://www.youtube.com/@tech-prof-electric" rel="noopener">YouTube-Kanal</a></div>
+<div class="col"><h4>Rechtliches</h4>
+<a href="impressum.html">Impressum</a><br>
+<a href="datenschutz.html">Datenschutz</a></div>
+<div class="col"><h4>Hinweis</h4>
+<span style="font-size:14px">Alle Rechner dienen der Orientierung und ersetzen keine Planung durch eine Elektrofachkraft nach DIN VDE.</span></div>
+</div></footer>
+<script src="rechner.js"></script>
+</body></html>
