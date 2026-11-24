@@ -12,11 +12,12 @@
 <a class="logo" href="index.html">⚡ tech prof <span>électrique</span></a>
 <nav>
 <a href="index.html">Start</a>
-<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a>
-<a href="leistung.html">Leistung</a>
-<a href="spannungsfall-querschnitt.html">Spannungsfall</a>
-<a href="stromkosten.html">Stromkosten</a>
-<a href="ueber-mich.html">Über mich</a>
+<div class="dd"><button type="button" class="dd-btn" onclick="this.parentElement.classList.toggle('open')">Rechner \u25be</button><div class="dd-menu"><a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><a href="leistung.html">Leistung &amp; Strom</a><a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><a href="stromkosten.html">Stromkosten</a></div></div>
+<div class="dd"><button type="button" class="dd-btn" onclick="this.parentElement.classList.toggle('open')">Lektionen \u25be</button><div class="dd-menu"><a href="einfacher-stromkreis.html">Lektion 1: Der Stromkreis</a><a href="spannung-strom-widerstand.html">Lektion 2: Spannung, Strom, Widerstand</a><a href="fuenf-sicherheitsregeln.html">Lektion 5: Die 5 Sicherheitsregeln</a></div></div>
+<a href="downloads.html">Downloads</a>
+<a href="ueber-mich.html">\u00dcber mich</a>
+<a href="kontakt.html">Kontakt</a>
+<select class="trsel" aria-label="Seite \u00fcbersetzen" onchange="var v=this.value;this.value='';if(v){window.open('https://translate.google.com/translate?sl=de&amp;tl='+v+'&amp;u='+encodeURIComponent(location.href),'_blank')}"><option value="">\U0001F310 \u00dcbersetzen</option><option value="ar">\u0627\u0644\u0639\u0631\u0628\u064a\u0629</option><option value="fr">Fran\u00e7ais</option><option value="en">English</option><option value="tr">T\u00fcrk\u00e7e</option></select>
 </nav></div></header>
 
 <div class="hero"><h1>Elektro-Rechner für die Praxis –<br><em>von einem Elektriker, für Elektriker</em></h1>
@@ -27,6 +28,13 @@
 <div class="tool"><h3>🔌 Leistung &amp; Strom</h3><p>Leistung und Stromstärke für Gleichstrom, Wechselstrom 230 V und Drehstrom 400 V – inklusive cos φ.</p><a class="btn" href="leistung.html">Zum Rechner</a></div>
 <div class="tool"><h3>📏 Spannungsfall &amp; Querschnitt</h3><p>Spannungsfall in Volt und Prozent, dazu die Empfehlung für den passenden Kabelquerschnitt in Kupfer oder Aluminium.</p><a class="btn" href="spannungsfall-querschnitt.html">Zum Rechner</a></div>
 <div class="tool"><h3>💶 Stromkosten</h3><p>Was kostet ein Gerät wirklich pro Jahr? Standby-Fresser aufdecken und Stromkosten exakt ausrechnen.</p><a class="btn" href="stromkosten.html">Zum Rechner</a></div>
+</div>
+<h2 style="margin:26px 0 4px">Lektionen als Artikel</h2>
+<p class="sub">Die Video-Lektionen zum Nachlesen – mit Formel, durchgerechnetem Beispiel und Norm.</p>
+<div class="grid">
+<div class="tool"><h3>🔌 Lektion 1: Der einfache Stromkreis</h3><p>Warum der Schalter in die Phase gehört – der Fall der Lampe, die leuchtet, und trotzdem einen Stromschlag gab (DIN VDE 0100-460).</p><a class="btn" href="einfacher-stromkreis.html">Zum Artikel</a></div>
+<div class="tool"><h3>⚡ Lektion 2: Spannung, Strom, Widerstand</h3><p>U, I und R mit dem Wasserbild, dem Ohmschen Gesetz und dem Heizlüfter-Beispiel: 2000 W an 230 V.</p><a class="btn" href="spannung-strom-widerstand.html">Zum Artikel</a></div>
+<div class="tool"><h3>🛡️ Lektion 5: Die 5 Sicherheitsregeln</h3><p>Freischalten, sichern, prüfen – nach DIN VDE 0105-100, mit der Rechnung, warum 230 V am Körper lebensgefährlich sind.</p><a class="btn" href="fuenf-sicherheitsregeln.html">Zum Artikel</a></div>
 </div>
 <article>
 <h2>Warum diese Seite?</h2>
@@ -50,6 +58,11 @@
 <a href="leistung.html">Leistung &amp; Strom</a><br>
 <a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><br>
 <a href="stromkosten.html">Stromkosten</a></div>
+<div class="col"><h4>Lektionen &amp; Downloads</h4>
+<a href="einfacher-stromkreis.html">Lektion 1: Der Stromkreis</a><br>
+<a href="spannung-strom-widerstand.html">Lektion 2: U, I, R</a><br>
+<a href="fuenf-sicherheitsregeln.html">Lektion 5: Sicherheitsregeln</a><br>
+<a href="downloads.html">Downloads (PDF)</a></div>
 <div class="col"><h4>Projekt</h4>
 <a href="ueber-mich.html">Über mich</a><br>
 <a href="kontakt.html">Kontakt</a><br>
