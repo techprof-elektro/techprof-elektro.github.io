@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Der einfache Stromkreis – Schalter gehört in die Phase | Lektion 1</title>
+<meta name="description" content="Lektion 1: Der einfache Stromkreis einfach erklärt – warum der Schalter in den Außenleiter gehört und nicht in den Neutralleiter, mit Rechenbeispiel und DIN VDE 0100-460 / 0100-410.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="hwrap">
+<a class="logo" href="index.html">⚡ tech prof <span>électrique</span></a>
+<nav>
+<a href="index.html">Start</a>
+<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a>
+<a href="leistung.html">Leistung</a>
+<a href="spannungsfall-querschnitt.html">Spannungsfall</a>
+<a href="stromkosten.html">Stromkosten</a>
+<a href="ueber-mich.html">Über mich</a>
+</nav></div></header>
+
+<main><article>
+<h1>Der einfache Stromkreis – Lektion 1</h1>
+<p class="sub">Freitags-Challenge: Ein echter Fall aus der Praxis. Die Lampe leuchtet – und trotzdem gab es beim Lampenwechsel einen Stromschlag, obwohl der Schalter aus war. Richtig oder falsch verdrahtet?</p>
+<p>Video zur Lektion auf dem YouTube-Kanal <a href="https://www.youtube.com/@tech-prof-electric" rel="noopener">tech prof électrique</a> (Lektion 1, 20. November 2026). Zum Nachrechnen: <a href="ohmsches-gesetz.html">Ohmsches-Gesetz-Rechner</a>.</p>
+
+<h2>Der Fall</h2>
+<p>Ein Hausbesitzer ruft an: „Meine Lampe leuchtet, alles funktioniert. Aber beim Lampenwechsel bekam ich einen Stromschlag – obwohl der Schalter aus war.“ Der Blick in die Verdrahtung zeigt es: Die Phase geht direkt zur Lampe. Der Schalter sitzt im Rückleiter, im Neutralleiter. Die Lampe leuchtet, der Kreis ist geschlossen. Aber ist das richtig?</p>
+<p>Die Antwort lautet: <b>Nein – falsch.</b> Und der Grund dafür ist einer der wichtigsten Sätze der Elektroinstallation überhaupt.</p>
+
+<h2>So sieht der richtige Stromkreis aus</h2>
+<p>Von der Spannungsquelle mit 230 Volt geht der Außenleiter – die Phase – zum Schalter. Vom Schalter geht es weiter zur Lampe, und über den Neutralleiter zurück zur Quelle. Ein geschlossener Kreis. Nur dann fließt Strom.</p>
+<p>Der Schalter muss also <b>den Außenleiter unterbrechen</b>. Dann ist die Lampenfassung im ausgeschalteten Zustand spannungsfrei. Sitzt der Schalter dagegen im Neutralleiter, bleibt die Phase an der Fassung anliegen – die Lampe leuchtet trotzdem, weil der Kreis beim Einschalten geschlossen wird. Wer dann die Lampe wechselt und die Fassung berührt, bekommt die vollen 230 Volt ab, obwohl der Schalter „aus“ ist.</p>
+
+<h2>Durchgerechnetes Beispiel</h2>
+<p>Eine Lampe mit 60 Watt an 230 Volt. Wie viel Strom fließt, und wie groß ist ihr Widerstand?</p>
+<div class="formel">I = P / U &nbsp;&nbsp;|&nbsp;&nbsp; R = U / I</div>
+<ul>
+<li>I = P / U = 60 W / 230 V = <b>0,26 A</b></li>
+<li>R = U / I = 230 V / 0,26 A = <b>ca. 880 Ω</b></li>
+</ul>
+<p>Probe: P = U · I = 230 V · 0,26 A ≈ 60 W – die Rechnung stimmt.</p>
+
+<h2>Was sagt die Norm dazu?</h2>
+<ul>
+<li><b>DIN VDE 0100-460:</b> Schaltgeräte müssen den Außenleiter unterbrechen – nicht den Neutralleiter allein.</li>
+<li><b>DIN VDE 0100-410</b> (Schutz gegen elektrischen Schlag): Im ausgeschalteten Zustand darf an der Lampenfassung keine gefährliche Spannung anliegen.</li>
+<li><b>Der Neutralleiter darf nicht allein geschaltet werden.</b></li>
+</ul>
+<p>Genau das ist hier verletzt: Der Schalter unterbricht nur den Neutralleiter, die Phase bleibt an der Fassung. Die Anlage „funktioniert“ – und ist trotzdem lebensgefährlich.</p>
+
+<h2>Merke dir das</h2>
+<div class="tip"><b>Merksatz:</b> Schalter immer in die Phase. Eine Lampe, die leuchtet, ist noch lange kein Beweis für eine richtige Verdrahtung – erst die Prüfung zeigt, ob die Fassung im ausgeschalteten Zustand wirklich spannungsfrei ist.</div>
+
+<h2>Übungsaufgabe</h2>
+<p>Du prüfst eine Lampe: Schalter aus, aber der zweipolige Spannungsprüfer zeigt an der Fassung 230 Volt an. Was ist falsch verdrahtet – und welche Norm ist verletzt? Die Auflösung steht in der nächsten Lektion: <a href="spannung-strom-widerstand.html">Spannung, Strom und Widerstand</a>.</p>
+
+<div class="faq">
+<h2>Häufige Fragen</h2>
+<h3>Warum leuchtet die Lampe trotzdem, wenn der Schalter falsch sitzt?</h3>
+<p>Weil der Stromkreis beim Einschalten geschlossen ist – egal, ob der Schalter in der Phase oder im Neutralleiter sitzt. Der Unterschied zeigt sich erst im ausgeschalteten Zustand: Nur der Schalter in der Phase macht die Fassung spannungsfrei.</p>
+<h3>Reicht es, die Sicherung auszuschalten, bevor ich eine Lampe wechsle?</h3>
+<p>Nein. Sicher ist nur die Reihenfolge der 5 Sicherheitsregeln nach DIN VDE 0105-100: freischalten, gegen Wiedereinschalten sichern, Spannungsfreiheit feststellen – erst dann anfassen. Siehe <a href="fuenf-sicherheitsregeln.html">Lektion 5: Die 5 Sicherheitsregeln</a>.</p>
+</div>
+<div class="warn"><b>Wichtiger Hinweis:</b> Diese Seite dient der Ausbildung. Arbeiten an elektrischen Anlagen dürfen nur von Elektrofachkräften ausgeführt werden. Maßgeblich sind immer die aktuellen DIN-VDE-Normen, die Angaben der Hersteller und die örtlichen TAB des Netzbetreibers.</div></article></main>
+<footer><div class="fwrap">
+<div class="col"><h4>Rechner</h4>
+<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><br>
+<a href="leistung.html">Leistung &amp; Strom</a><br>
+<a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><br>
+<a href="stromkosten.html">Stromkosten</a></div>
+<div class="col"><h4>Lektionen</h4>
+<a href="einfacher-stromkreis.html">Lektion 1: Stromkreis</a><br>
+<a href="spannung-strom-widerstand.html">Lektion 2: U, I, R</a><br>
+<a href="fuenf-sicherheitsregeln.html">Lektion 5: Sicherheitsregeln</a></div>
+<div class="col"><h4>Projekt</h4>
+<a href="ueber-mich.html">Über mich</a><br>
+<a href="kontakt.html">Kontakt</a><br>
+<a href="https://www.facebook.com/profile.php?id=61558968189552" rel="noopener">Facebook-Seite</a><br>
+<a href="https://www.youtube.com/@tech-prof-electric" rel="noopener">YouTube-Kanal</a></div>
+<div class="col"><h4>Rechtliches</h4>
+<a href="impressum.html">Impressum</a><br>
+<a href="datenschutz.html">Datenschutz</a></div>
+</div></footer>
+<script src="rechner.js"></script>
+</body></html>
