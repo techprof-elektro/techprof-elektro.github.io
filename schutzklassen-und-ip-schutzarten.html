@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schutzklassen und IP-Schutzarten – Klasse I, II, III &amp; IP-Code einfach erklärt | Lektion 7</title>
+<meta name="description" content="Lektion 7: Schutzklassen I, II, III und Klasse 0, IP-Schutzart nach DIN EN 60529, Bad-Zonen nach DIN VDE 0100-701 – mit Rechenbeispiel (LED 24 W an 12 V = 2 A).">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="hwrap">
+<a class="logo" href="index.html">⚡ tech prof <span>électrique</span></a>
+<nav>
+<a href="index.html">Start</a>
+<div class="dd"><button type="button" class="dd-btn" onclick="this.parentElement.classList.toggle('open')">Rechner ▾</button><div class="dd-menu"><a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><a href="leistung.html">Leistung &amp; Strom</a><a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><a href="stromkosten.html">Stromkosten</a></div></div>
+<div class="dd"><button type="button" class="dd-btn" onclick="this.parentElement.classList.toggle('open')">Lektionen ▾</button><div class="dd-menu"><a href="einfacher-stromkreis.html">Lektion 1: Der Stromkreis</a><a href="spannung-strom-widerstand.html">Lektion 2: Spannung, Strom, Widerstand</a><a href="fuenf-sicherheitsregeln.html">Lektion 5: Die 5 Sicherheitsregeln</a><a href="gefahren-des-elektrischen-stroms.html">Lektion 6: Gefahren des elektrischen Stroms</a><a href="schutzklassen-und-ip-schutzarten.html">Lektion 7: Schutzklassen und IP-Schutzarten</a></div></div>
+<a href="downloads.html">Downloads</a>
+<a href="ueber-mich.html">Über mich</a>
+<a href="kontakt.html">Kontakt</a>
+<select class="trsel" aria-label="Seite übersetzen" onchange="var v=this.value;this.value='';if(v){window.open('https://translate.google.com/translate?sl=de&amp;tl='+v+'&amp;u='+encodeURIComponent(location.href),'_blank')}"><option value="">🌐 Übersetzen</option><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option><option value="tr">Türkçe</option></select>
+</nav></div></header>
+
+<main><article>
+<h1>Schutzklassen und IP-Schutzarten – Lektion 7</h1>
+<p class="sub">Schutzklasse I, II oder III? Ein kleines Symbol auf dem Typenschild entscheidet, ob ein Gerät einen Schutzleiter braucht.</p>
+<p>Video zur Lektion: <a href="https://youtu.be/J4rCpTvDI4c" rel="noopener">Schutzklassen &amp; IP-Schutzarten einfach erklärt – Klasse I, II, III &amp; IP20 bis IP68 | Lektion 7</a> (26. November 2026, 19:00). Normen: DIN EN 60529, DIN VDE 0100-701.</p>
+
+<h2>Die vier Schutzklassen im Überblick</h2>
+<ul>
+<li><b>Schutzklasse 0:</b> nur Basisisolierung, kein Schutzleiter – veraltet und für neue Geräte nicht mehr zulässig.</li>
+<li><b>Schutzklasse I:</b> Schutz durch den Schutzleiter (PE).</li>
+<li><b>Schutzklasse II:</b> Schutzisolierung – doppelte oder verstärkte Isolierung, kein Schutzleiter nötig.</li>
+<li><b>Schutzklasse III:</b> Schutzkleinspannung (SELV), höchstens 50 V AC oder 120 V DC.</li>
+</ul>
+<p>Die Schutzklasse sagt dir, <b>wie</b> ein Gerät dich im Fehlerfall schützt: über den Schutzleiter, über seine Isolierung oder über eine ungefährliche Kleinspannung. Du musst kein Datenblatt wälzen – das Symbol auf dem Typenschild verrät es.</p>
+
+<h2>Schutzklasse I: Schutz durch den Schutzleiter</h2>
+<p>Du erkennst sie am Erdungssymbol auf dem Typenschild. Der Schutzleiter ist fest mit dem Metallgehäuse verbunden. Tritt ein Fehler auf und das Gehäuse wird spannungsführend, fließt der Fehlerstrom über den Schutzleiter ab – Sicherung oder FI-Schalter lösen aus, bevor du das Gerät berührst. Typische Geräte: Waschmaschine, Kühlschrank, Elektroherd. Wichtig: Bei Klasse I ist der Schutzleiter Teil des Schutzkonzepts – ein Gerät dieser Klasse darf niemals ohne ihn betrieben werden.</p>
+
+<h2>Schutzklasse II: Die Isolierung schützt</h2>
+<p>Geräte der Schutzklasse II brauchen keinen Schutzleiter: Eine doppelte oder verstärkte Isolierung sorgt dafür, dass keine gefährliche Spannung ans Gehäuse gelangen kann. Das Symbol sind <b>zwei ineinander liegende Quadrate</b>. Der Stecker hat nur zwei Pole. Typische Geräte: Bohrmaschine, Föhn, Ladegerät. Hier schützt die Isolierung selbst – darum darf ein beschädigtes Gehäuse bei diesen Geräten nicht einfach ignoriert werden.</p>
+
+<h2>Schutzklasse III: Schutzkleinspannung SELV</h2>
+<p>Schutzklasse III arbeitet mit Schutzkleinspannung, SELV genannt: höchstens <b>50 Volt Wechselspannung</b> oder <b>120 Volt Gleichspannung</b>. Bei so kleinen Spannungen bleibt der Strom durch den Körper beherrschbar – das Schutzkonzept ist die Spannung selbst. Das Symbol ist eine Raute mit einer römischen Drei. Typische Anwendungen: LED-Leuchten und Spielzeug.</p>
+
+<h2>Rechenbeispiel: LED-Leuchte an 12 Volt</h2>
+<p>Eine LED-Leuchte mit 24 Watt wird an 12 Volt betrieben. Welcher Strom fließt?</p>
+<div class="formel">I = P / U = 24 W / 12 V = 2 A</div>
+<p>2 Ampere Betriebsstrom – aber an nur 12 Volt, also weit unter der Berührungsspannungsgrenze aus <a href="gefahren-des-elektrischen-stroms.html">Lektion 6</a>. Genau das ist der Gedanke der Schutzklasse III: Die Leistung ist da, die Gefahr bleibt klein. Weitere Rechnungen dieser Art findest du im <a href="leistung.html">Leistungs-Rechner</a>.</p>
+
+<h2>Die IP-Schutzart nach DIN EN 60529</h2>
+<p>Die IP-Schutzart beschreibt, wie gut ein Gehäuse gegen Berührung, Fremdkörper und Wasser geschützt ist. Die <b>erste Ziffer</b> steht für Berührung und Fremdkörper: 0 heißt kein Schutz, 2 heißt Fingerschutz, 5 heißt staubgeschützt, 6 heißt staubdicht. Die <b>zweite Ziffer</b> steht für Wasser: Sie reicht von 0 bis 9 – von tropfwassergeschützt bis zum dauerhaften Untertauchen. Ein X an einer Stelle bedeutet: Diese Eigenschaft ist nicht geprüft beziehungsweise nicht angegeben.</p>
+
+<h2>IP-Schutzarten in der Praxis</h2>
+<ul>
+<li><b>IP20:</b> im trockenen Innenraum ausreichend.</li>
+<li><b>IP44:</b> im Außenbereich mindestens – spritzwassergeschützt.</li>
+<li><b>IP65:</b> auf der Baustelle und im Garten – staubdicht und strahlwassergeschützt.</li>
+</ul>
+<p>Im Bad gelten zusätzlich die Schutzbereiche nach DIN VDE 0100-701: <b>Zone 0 verlangt IPX7, Zone 1 IPX5 und Zone 2 IPX4</b> – je näher an Wanne und Dusche, desto höher der Wasserschutz.</p>
+
+<div class="tip"><b>Merksatz:</b> Das Typenschild lügt nicht: Erdungssymbol heißt Schutzklasse I, Doppelquadrat heißt Klasse II, Raute mit III heißt Kleinspannung – und die IP-Ziffern sagen dir, wo das Gerät leben darf.</div>
+
+<h2>Übungsaufgabe</h2>
+<p>Welches Symbol trägt euer ältestes Gerät zu Hause – Schutzklasse I, II oder III? Schaut auf das Typenschild und schreibt es in die Kommentare unter dem Video. Weiter geht es morgen mit Lektion 8.</p>
+
+<div class="tip"><b>🎬 Diese Lektion als Video ansehen:</b><br>
+Auf Facebook bei <a href="https://www.facebook.com/286993421170354/posts/29341046285511555" rel="noopener">tech prof électrique</a><br>
+Auf YouTube bei <a href="https://youtu.be/J4rCpTvDI4c" rel="noopener">tech prof</a></div>
+
+<div class="faq">
+<h2>Häufige Fragen</h2>
+<h3>Woran erkenne ich die Schutzklasse eines Geräts?</h3>
+<p>Am Symbol auf dem Typenschild: Das Erdungssymbol steht für Schutzklasse I, zwei ineinander liegende Quadrate für Schutzklasse II und eine Raute mit einer römischen Drei für Schutzklasse III. Geräte der veralteten Klasse 0 haben nur eine Basisisolierung und keinen Schutzleiter.</p>
+<h3>Welche IP-Schutzart brauche ich im Bad?</h3>
+<p>Das hängt von der Zone nach DIN VDE 0100-701 ab: Zone 0 (in Wanne oder Dusche) verlangt IPX7, Zone 1 IPX5 und Zone 2 IPX4. Außerhalb der Zonen und im trockenen Innenraum reicht in der Regel IP20.</p>
+</div>
+<div class="warn"><b>Wichtiger Hinweis:</b> Diese Seite dient der Ausbildung und ersetzt keine Unterweisung. Arbeiten an elektrischen Anlagen dürfen nur von Elektrofachkräften ausgeführt werden. Maßgeblich sind immer die aktuellen DIN-VDE-Normen, die Angaben der Hersteller und die örtlichen TAB des Netzbetreibers.</div></article></main>
+<footer><div class="fwrap">
+<div class="col"><h4>Rechner</h4>
+<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><br>
+<a href="leistung.html">Leistung &amp; Strom</a><br>
+<a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><br>
+<a href="stromkosten.html">Stromkosten</a></div>
+<div class="col"><h4>Lektionen</h4>
+<a href="einfacher-stromkreis.html">Lektion 1: Stromkreis</a><br>
+<a href="spannung-strom-widerstand.html">Lektion 2: U, I, R</a><br>
+<a href="fuenf-sicherheitsregeln.html">Lektion 5: Sicherheitsregeln</a><br>
+<a href="gefahren-des-elektrischen-stroms.html">Lektion 6: Stromgefahren</a><br>
+<a href="schutzklassen-und-ip-schutzarten.html">Lektion 7: Schutzklassen &amp; IP</a></div>
+<div class="col"><h4>Lektionen &amp; Downloads</h4>
+<a href="einfacher-stromkreis.html">Lektion 1: Der Stromkreis</a><br>
+<a href="spannung-strom-widerstand.html">Lektion 2: U, I, R</a><br>
+<a href="fuenf-sicherheitsregeln.html">Lektion 5: Sicherheitsregeln</a><br>
+<a href="gefahren-des-elektrischen-stroms.html">Lektion 6: Gefahren des Stroms</a><br>
+<a href="schutzklassen-und-ip-schutzarten.html">Lektion 7: Schutzklassen &amp; IP-Schutzarten</a><br>
+<a href="downloads.html">Downloads (PDF)</a></div>
+<div class="col"><h4>Projekt</h4>
+<a href="ueber-mich.html">Über mich</a><br>
+<a href="kontakt.html">Kontakt</a><br>
+<a href="https://www.facebook.com/profile.php?id=61558968189552" rel="noopener">Facebook-Seite</a><br>
+<a href="https://www.youtube.com/@tech-prof-electric" rel="noopener">YouTube-Kanal</a></div>
+<div class="col"><h4>Rechtliches</h4>
+<a href="impressum.html">Impressum</a><br>
+<a href="datenschutz.html">Datenschutz</a></div>
+</div></footer>
+<script src="rechner.js"></script>
+</body></html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gefahren des elektrischen Stroms – 30 mA, Körperwiderstand &amp; FI-Schutz einfach erklärt | Lektion 6</title>
+<meta name="description" content="Lektion 6: Gefahren des elektrischen Stroms – Körperwiderstand (100.000 Ω bis 500 Ω), Wirkung ab 30 mA, Berührungsspannung 50 V nach DIN VDE 0100-410 und FI-Schutz – mit Rechenbeispiel (230 V am Körper).">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="hwrap">
+<a class="logo" href="index.html">⚡ tech prof <span>électrique</span></a>
+<nav>
+<a href="index.html">Start</a>
+<div class="dd"><button type="button" class="dd-btn" onclick="this.parentElement.classList.toggle('open')">Rechner ▾</button><div class="dd-menu"><a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><a href="leistung.html">Leistung &amp; Strom</a><a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><a href="stromkosten.html">Stromkosten</a></div></div>
+<div class="dd"><button type="button" class="dd-btn" onclick="this.parentElement.classList.toggle('open')">Lektionen ▾</button><div class="dd-menu"><a href="einfacher-stromkreis.html">Lektion 1: Der Stromkreis</a><a href="spannung-strom-widerstand.html">Lektion 2: Spannung, Strom, Widerstand</a><a href="fuenf-sicherheitsregeln.html">Lektion 5: Die 5 Sicherheitsregeln</a><a href="gefahren-des-elektrischen-stroms.html">Lektion 6: Gefahren des elektrischen Stroms</a><a href="schutzklassen-und-ip-schutzarten.html">Lektion 7: Schutzklassen und IP-Schutzarten</a></div></div>
+<a href="downloads.html">Downloads</a>
+<a href="ueber-mich.html">Über mich</a>
+<a href="kontakt.html">Kontakt</a>
+<select class="trsel" aria-label="Seite übersetzen" onchange="var v=this.value;this.value='';if(v){window.open('https://translate.google.com/translate?sl=de&amp;tl='+v+'&amp;u='+encodeURIComponent(location.href),'_blank')}"><option value="">🌐 Übersetzen</option><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option><option value="tr">Türkçe</option></select>
+</nav></div></header>
+
+<main><article>
+<h1>Gefahren des elektrischen Stroms – Lektion 6</h1>
+<p class="sub">30 Milliampere. So wenig Strom kann ein Herz stoppen – was Strom mit deinem Körper macht und wie du dich schützt.</p>
+<p>Video zur Lektion: <a href="https://youtu.be/EfgNL9ta7Ho" rel="noopener">Gefahren des elektrischen Stroms einfach erklärt – 30 mA, Körperwiderstand &amp; FI-Schutz | Lektion 6</a> (25. November 2026, 19:00). Norm: DIN VDE 0100-410.</p>
+
+<h2>Der Körper ist ein Widerstand</h2>
+<p>Wer einen spannungsführenden Teil berührt, wird selbst Teil des Stromkreises. Wie viel Strom dann fließt, entscheidet der Körperwiderstand – und der schwankt enorm: Trockene Haut hat bis zu 100.000 Ohm, feuchte Haut nur noch etwa 1.000 Ohm, nasse Hände sogar nur rund 500 Ohm. Dazu kommt der Stromweg: Fließt der Strom von Hand zu Hand, geht er direkt durchs Herz. Genau deshalb ist dieselbe Spannung einmal harmlos und einmal tödlich – es kommt auf Haut, Feuchtigkeit und Stromweg an.</p>
+
+<h2>Die Wirkung steigt mit dem Strom</h2>
+<ul>
+<li><b>Ab etwa 1 mA:</b> ein leichtes Kribbeln – die Wahrnehmungsschwelle.</li>
+<li><b>10 bis 15 mA:</b> Die Muskeln verkrampfen, Loslassen ist nicht mehr möglich.</li>
+<li><b>20 bis 30 mA:</b> Das Atmen wird schwer.</li>
+<li><b>Ab etwa 30 mA:</b> Das Herz kann in Kammerflimmern geraten – lebensgefährlich.</li>
+</ul>
+<p>Merke dir die eine Zahl: <b>30 Milliampere</b>. Ab hier wird es für das Herz kritisch – und genau auf diese Zahl ist der FI-Schutz ausgelegt.</p>
+
+<h2>50 Volt – die Grenze der Berührungsspannung</h2>
+<p>Nach DIN VDE 0100-410 gilt eine Berührungsspannung von <b>50 Volt Wechselspannung</b> als Grenze: Darunter ist der Strom durch den Körper normalerweise noch beherrschbar. Aber Vorsicht, die Grenze ist keine Freikarte: Auch 50 Volt können bei nasser Haut schon 50 Milliampere durch den Körper treiben – mehr, als der FI zum Auslösen braucht. Wer mit nassen Händen arbeitet, senkt seinen Körperwiderstand und hebt damit den Strom bei gleicher Spannung.</p>
+
+<h2>Rechenbeispiel: 230 Volt aus der Steckdose</h2>
+<p>Der Körperwiderstand liegt bei feuchter Haut bei etwa 1.000 Ohm. An 230 Volt fließen dann:</p>
+<div class="formel">I = U / R = 230 V / 1000 Ω = 0,23 A = 230 mA</div>
+<p>230 Milliampere durch den Körper – das ist mehr als das <b>Siebenfache</b> des FI-Auslösestroms von 30 Milliampere. Mit nassen Händen (500 Ohm) sind es sogar 460 Milliampere. Du siehst: Nicht die Spannung allein entscheidet, sondern der Strom, der aus Spannung und Körperwiderstand entsteht. Rechnen kannst du das jederzeit mit dem <a href="ohmsches-gesetz.html">Ohmschen-Gesetz-Rechner</a> nach.</p>
+
+<h2>Warum auch die Zeit entscheidet</h2>
+<p>Je länger der Strom fließt, desto gefährlicher wird es. Darum muss der Schutz schnell sein: Der FI-Schalter löst bei 30 Milliampere in unter <b>0,3 Sekunden</b> aus – bei 150 Milliampere sogar in unter <b>0,04 Sekunden</b>. Jede Millisekunde zählt, weil das Kammerflimmern mit der Einwirkdauer immer wahrscheinlicher wird. Der FI begrenzt also nicht nur den Stromweg über den Körper, er begrenzt vor allem die Zeit.</p>
+
+<h2>Stromunfall – richtig reagieren</h2>
+<p>Wenn es trotzdem passiert: <b>Niemals das Opfer anfassen, solange der Strom fließt</b> – sonst wirst du selbst zum zweiten Opfer. Erst freischalten oder die Sicherung ausschalten, dann helfen: Notruf 112, Erste Hilfe leisten, stabile Seitenlage. Und die wichtigste Regel bleibt: Niemals unter Spannung arbeiten, wenn Freischalten möglich ist – die <a href="fuenf-sicherheitsregeln.html">5 Sicherheitsregeln</a> aus Lektion 5 sind dafür da.</p>
+
+<div class="tip"><b>Merksatz:</b> Nicht die Spannung tötet, sondern der Strom durch den Körper – und 30 Milliampere können schon reichen. Trockene Haut, FI-Schutz und Freischalten halten dich unter dieser Grenze.</div>
+
+<h2>Übungsaufgabe</h2>
+<p>Was hat euch am meisten überrascht – dass schon 30 Milliampere reichen können? Schreibt es in die Kommentare unter dem Video. Weiter geht es morgen mit Lektion 7: Schutzklassen und IP-Schutzarten.</p>
+
+<div class="tip"><b>🎬 Diese Lektion als Video ansehen:</b><br>
+Auf Facebook bei <a href="https://www.facebook.com/122241058760298939" rel="noopener">tech prof électrique</a><br>
+Auf YouTube bei <a href="https://youtu.be/EfgNL9ta7Ho" rel="noopener">tech prof</a></div>
+
+<div class="faq">
+<h2>Häufige Fragen</h2>
+<h3>Ab wie viel Milliampere wird Strom lebensgefährlich?</h3>
+<p>Ab etwa 30 Milliampere kann das Herz in Kammerflimmern geraten – das ist lebensgefährlich. Schon ab 10 bis 15 Milliampere kannst du einen Leiter nicht mehr loslassen, weil die Muskeln verkrampfen.</p>
+<h3>Warum schützt der FI-Schalter mit 30 mA?</h3>
+<p>Weil 30 Milliampere die Schwelle ist, ab der es für das Herz kritisch wird. Der FI löst bei diesem Fehlerstrom in unter 0,3 Sekunden aus – bei 150 Milliampere sogar in unter 0,04 Sekunden – und begrenzt so die gefährliche Einwirkzeit.</p>
+</div>
+<div class="warn"><b>Wichtiger Hinweis:</b> Diese Seite dient der Ausbildung und ersetzt keine Unterweisung. Arbeiten an elektrischen Anlagen dürfen nur von Elektrofachkräften ausgeführt werden. Maßgeblich sind immer die aktuellen DIN-VDE-Normen, die Angaben der Hersteller und die örtlichen TAB des Netzbetreibers.</div></article></main>
+<footer><div class="fwrap">
+<div class="col"><h4>Rechner</h4>
+<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><br>
+<a href="leistung.html">Leistung &amp; Strom</a><br>
+<a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><br>
+<a href="stromkosten.html">Stromkosten</a></div>
+<div class="col"><h4>Lektionen</h4>
+<a href="einfacher-stromkreis.html">Lektion 1: Stromkreis</a><br>
+<a href="spannung-strom-widerstand.html">Lektion 2: U, I, R</a><br>
+<a href="fuenf-sicherheitsregeln.html">Lektion 5: Sicherheitsregeln</a><br>
+<a href="gefahren-des-elektrischen-stroms.html">Lektion 6: Stromgefahren</a><br>
+<a href="schutzklassen-und-ip-schutzarten.html">Lektion 7: Schutzklassen &amp; IP</a></div>
+<div class="col"><h4>Lektionen &amp; Downloads</h4>
+<a href="einfacher-stromkreis.html">Lektion 1: Der Stromkreis</a><br>
+<a href="spannung-strom-widerstand.html">Lektion 2: U, I, R</a><br>
+<a href="fuenf-sicherheitsregeln.html">Lektion 5: Sicherheitsregeln</a><br>
+<a href="gefahren-des-elektrischen-stroms.html">Lektion 6: Gefahren des Stroms</a><br>
+<a href="schutzklassen-und-ip-schutzarten.html">Lektion 7: Schutzklassen &amp; IP-Schutzarten</a><br>
+<a href="downloads.html">Downloads (PDF)</a></div>
+<div class="col"><h4>Projekt</h4>
+<a href="ueber-mich.html">Über mich</a><br>
+<a href="kontakt.html">Kontakt</a><br>
+<a href="https://www.facebook.com/profile.php?id=61558968189552" rel="noopener">Facebook-Seite</a><br>
+<a href="https://www.youtube.com/@tech-prof-electric" rel="noopener">YouTube-Kanal</a></div>
+<div class="col"><h4>Rechtliches</h4>
+<a href="impressum.html">Impressum</a><br>
+<a href="datenschutz.html">Datenschutz</a></div>
+</div></footer>
+<script src="rechner.js"></script>
+</body></html>
