@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Die Ausschaltung – Freitags-Challenge: Hamburger Schaltung, richtig oder falsch? | Lektion 8</title>
+<meta name="description" content="Lektion 8: Die Ausschaltung – der Schalter unterbricht immer den Außenleiter. Freitags-Challenge: die Hamburger Schaltung – Lampe aus, Fassung trotzdem an 230 V? Mit Rechenbeispiel (100 W, 0,43 A, 529 Ω) und DIN VDE 0100-460 / 0100-410.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="hwrap">
+<a class="logo" href="index.html">⚡ tech prof <span>électrique</span></a>
+<nav>
+<a href="index.html">Start</a>
+<div class="dd"><button type="button" class="dd-btn" onclick="this.parentElement.classList.toggle('open')">Rechner ▾</button><div class="dd-menu"><a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><a href="leistung.html">Leistung &amp; Strom</a><a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><a href="stromkosten.html">Stromkosten</a></div></div>
+<div class="dd"><button type="button" class="dd-btn" onclick="this.parentElement.classList.toggle('open')">Lektionen ▾</button><div class="dd-menu"><a href="einfacher-stromkreis.html">Lektion 1: Der Stromkreis</a><a href="spannung-strom-widerstand.html">Lektion 2: Spannung, Strom, Widerstand</a><a href="fuenf-sicherheitsregeln.html">Lektion 5: Die 5 Sicherheitsregeln</a><a href="gefahren-des-elektrischen-stroms.html">Lektion 6: Gefahren des elektrischen Stroms</a><a href="schutzklassen-und-ip-schutzarten.html">Lektion 7: Schutzklassen und IP-Schutzarten</a><a href="ausschaltung.html">Lektion 8: Die Ausschaltung</a></div></div>
+<a href="downloads.html">Downloads</a>
+<a href="ueber-mich.html">Über mich</a>
+<a href="kontakt.html">Kontakt</a>
+<select class="trsel" aria-label="Seite übersetzen" onchange="var v=this.value;this.value='';if(v){window.open('https://translate.google.com/translate?sl=de&amp;tl='+v+'&amp;u='+encodeURIComponent(location.href),'_blank')}"><option value="">🌍 Übersetzen</option><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option><option value="tr">Türkçe</option></select>
+</nav></div></header>
+
+<main><article>
+<h1>Die Ausschaltung – Lektion 8</h1>
+<p class="sub">Eine Lampe, zwei Schalter – und trotzdem ein Stromschlag, obwohl das Licht aus ist. Heute ist Freitag – und das heißt Challenge: Ihr entscheidet, richtig oder falsch?</p>
+<p>Video zur Lektion: <a href="https://youtu.be/39zHZyFY6zg" rel="noopener">Die Ausschaltung – Freitags-Challenge: Hamburger Schaltung, richtig oder falsch? | Lektion 8</a> (27. November 2026, 19:00). Normen: DIN VDE 0100-460, DIN VDE 0100-410.</p>
+
+<h2>Die Ausschaltung: der einfachste Lichtstromkreis</h2>
+<p>Die Ausschaltung ist die Grundschaltung für jede Leuchte: Von der Spannungsquelle mit 230 Volt geht der Außenleiter, die Phase, zum Schalter. Vom Schalter geht es weiter zur Lampe – und über den Neutralleiter zurück zur Quelle. Ein geschlossener Kreis, nur dann fließt Strom. Der Schalter hat genau eine Aufgabe: Er unterbricht den Außenleiter. Nie den Neutralleiter allein. Das ist keine Stilfrage, sondern die Norm – und der Unterschied zwischen einer sicheren Anlage und einer Falle.</p>
+<p>Warum gerade der Außenleiter? Weil der Schalter die Lampe stromlos machen muss, wenn er aus ist. Unterbricht er nur den Neutralleiter, liegt an der Lampenfassung weiterhin die volle Phase an – die Lampe leuchtet nicht, aber die Fassung ist gefährlich. Genau dieser Fehler steckt im Fall dieser Lektion.</p>
+
+<h2>Der Fall: Stromschlag trotz Licht aus</h2>
+<p>Ein Hausbesitzer ruft an: Meine Lampe leuchtet, alles funktioniert. Aber beim Lampenwechsel bekam ich einen Stromschlag – obwohl das Licht aus war. Die Verdrahtung: Zwei Schalter schalten abwechselnd die Phase und den Neutralleiter. Die Lampe liegt in der einzigen Korrespondierenden. So wurde früher eine Ader gespart – man nennt diese Schaltung die <b>Hamburger Schaltung</b>. Sie schaltet eine Leuchte von zwei Stellen aus, genau wie eine normale Wechselschaltung. Der Unterschied liegt in der Verdrahtung: Statt zwei Korrespondierenden gibt es nur eine – und dafür wird der Neutralleiter mitgeschaltet.</p>
+<p>Die Falle: In einer Schalterstellung liegt an beiden Polen der Lampenfassung die volle Phase an – 230 Volt – obwohl die Lampe aus ist. Wer dann das Lampengewinde berührt, etwa beim Auswechseln einer Glühlampe, bekommt den Schlag. Und ein zweipoliger Spannungsprüfer zeigt in diesem Zustand nichts an: Beide Pole haben das gleiche Potenzial, der Prüfer misst nur Spannungsunterschiede. Das macht die Schaltung so tückisch – sie sieht stromlos aus und ist es nicht.</p>
+
+<h2>Rechnen wir: Lampe 100 W an 230 V</h2>
+<p>Der Strom ist Leistung durch Spannung:</p>
+<div class="formel">I = P / U = 100 W / 230 V = 0,43 A</div>
+<p>Der Widerstand der heißen Lampe ist Spannung durch Strom:</p>
+<div class="formel">R = U / I = 230 V / 0,43 A = 529 Ω</div>
+<p>Kontrolle über die zweite Form: R = U² / P = 52900 / 100 = 529 Ω – die Probe stimmt. Eine 100-Watt-Lampe hat heiß etwa 529 Ohm. Kalt ist der Widerstand übrigens viel kleiner – darum ist der Einschaltstrom einer Glühlampe kurzzeitig deutlich höher als der Nennstrom.</p>
+
+<h2>Was sagt die Norm dazu?</h2>
+<p><b>DIN VDE 0100-460:</b> Schaltgeräte müssen den Außenleiter unterbrechen – der Neutralleiter darf nicht einpolig geschaltet werden. Das ist die zentrale Regel für jede Schaltung: Wer schaltet, schaltet die Phase.</p>
+<p><b>DIN VDE 0100-410 (Schutz gegen elektrischen Schlag):</b> Im ausgeschalteten Zustand darf an der Lampenfassung keine gefährliche Spannung anliegen. Eine Fassung, an der 230 Volt anliegen, obwohl das Licht aus ist, verletzt diese Forderung – egal, ob die Lampe leuchtet oder nicht.</p>
+<p><b>Seit Mai 1973 nicht mehr zulässig:</b> Die Hamburger Schaltung ist nach DIN VDE 0100-460 Abschnitt 463.1.2 nicht zulässig – und sie steht auch nicht unter Bestandsschutz. Das Energiewirtschaftsgesetz schreibt seit 2006 vor, dass während der Errichtung <i>und</i> während des Betriebes die aktuellen VDE-Richtlinien einzuhalten sind. Wer eine solche Schaltung im Altbau findet, muss sie umrüsten lassen – auf eine normale Wechselschaltung oder eine Sparwechselschaltung, die nur den Außenleiter schaltet.</p>
+
+<h2>Die häufigsten Fehler in der Praxis</h2>
+<ul>
+<li><b>Den Schalter in den Neutralleiter legen</b> – der Klassiker aus Lektion 1: Die Lampe leuchtet, aber die Fassung bleibt unter Spannung.</li>
+<li><b>Der Schalterstellung trauen,</b> ohne die Spannungsfreiheit zu prüfen – erst freischalten, dann prüfen, dann anfassen.</li>
+<li><b>Altbau-Schaltungen übernehmen,</b> ohne sie zu verstehen – was vor 1973 gebaut wurde, ist nicht automatisch sicher.</li>
+</ul>
+
+<div class="tip"><b>Merksatz:</b> Der Schalter unterbricht immer L – nie N allein! Wenn das Licht aus ist, muss die Fassung stromlos sein. Alles andere ist keine Sparschaltung, sondern eine Falle.</div>
+
+<h2>Übungsaufgabe</h2>
+<p>Richtig oder falsch? Darf man eine Lampe so schalten – Phase und Neutralleiter abwechselnd? Schreib deine Antwort in die Kommentare unter dem Video. Die Auflösung gibt es in der nächsten Lektion: Lektion 9 – die Wechselschaltung. Und im Praxis-Short des Tages: die <i>erlaubte</i> Sparwechselschaltung – eine Ader gespart, Steckdose unter beiden Schaltern.</p>
+
+<div class="tip"><b>🎬 Diese Lektion als Video ansehen:</b><br>
+Auf Facebook bei <a href="https://www.facebook.com/286993421170354/posts/1466825995578343" rel="noopener">tech prof électrique</a><br>
+Auf YouTube bei <a href="https://youtu.be/39zHZyFY6zg" rel="noopener">tech prof</a></div>
+
+<div class="faq">
+<h2>Häufige Fragen</h2>
+<h3>Darf man den Neutralleiter überhaupt schalten?</h3>
+<p>Nur allpolig, zusammen mit dem Außenleiter – niemals allein. Ein einpoliger Schalter im Neutralleiter lässt die Phase an der Lampe anliegen und ist nach DIN VDE 0100-460 unzulässig.</p>
+<h3>Was tun, wenn ich eine Hamburger Schaltung im Altbau finde?</h3>
+<p>Nicht einfach weiterbetreiben: Sie steht nicht unter Bestandsschutz. Lass sie von einer Elektrofachkraft auf eine normale Wechselschaltung oder eine Sparwechselschaltung umrüsten – und arbeite bis dahin nur nach den fünf Sicherheitsregeln, mit Spannungsfreiheit, die du mit dem zweipoligen Prüfer festgestellt hast.</p>
+</div>
+<div class="warn"><b>Wichtiger Hinweis:</b> Diese Seite dient der Ausbildung und ersetzt keine Unterweisung. Arbeiten an elektrischen Anlagen dürfen nur von Elektrofachkräften ausgeführt werden. Maßgeblich sind immer die aktuellen DIN-VDE-Normen, die Angaben der Hersteller und die örtlichen TAB des Netzbetreibers.</div></article></main>
+<footer><div class="fwrap">
+<div class="col"><h4>Rechner</h4>
+<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><br>
+<a href="leistung.html">Leistung &amp; Strom</a><br>
+<a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><br>
+<a href="stromkosten.html">Stromkosten</a></div>
+<div class="col"><h4>Lektionen</h4>
+<a href="einfacher-stromkreis.html">Lektion 1: Stromkreis</a><br>
+<a href="spannung-strom-widerstand.html">Lektion 2: U, I, R</a><br>
+<a href="fuenf-sicherheitsregeln.html">Lektion 5: Sicherheitsregeln</a><br>
+<a href="gefahren-des-elektrischen-stroms.html">Lektion 6: Gefahren des Stroms</a><br>
+<a href="schutzklassen-und-ip-schutzarten.html">Lektion 7: Schutzklassen &amp; IP</a><br>
+<a href="ausschaltung.html">Lektion 8: Ausschaltung</a></div>
+<div class="col"><h4>Lektionen &amp; Downloads</h4>
+<a href="einfacher-stromkreis.html">Lektion 1: Der Stromkreis</a><br>
+<a href="spannung-strom-widerstand.html">Lektion 2: U, I, R</a><br>
+<a href="fuenf-sicherheitsregeln.html">Lektion 5: Sicherheitsregeln</a><br>
+<a href="gefahren-des-elektrischen-stroms.html">Lektion 6: Gefahren des Stroms</a><br>
+<a href="schutzklassen-und-ip-schutzarten.html">Lektion 7: Schutzklassen &amp; IP</a><br>
+<a href="ausschaltung.html">Lektion 8: Die Ausschaltung</a><br>
+<a href="downloads.html">Downloads (PDF)</a></div>
+<div class="col"><h4>Projekt</h4>
+<a href="ueber-mich.html">Über mich</a><br>
+<a href="kontakt.html">Kontakt</a><br>
+<a href="https://www.facebook.com/profile.php?id=61558968189552" rel="noopener">Facebook-Seite</a><br>
+<a href="https://www.youtube.com/@tech-prof-electric" rel="noopener">YouTube-Kanal</a><br>
+<a href="https://www.tiktok.com/@tech_prof_elekterik" rel="noopener">TikTok-Kanal</a></div>
+<div class="col"><h4>Rechtliches</h4>
+<a href="impressum.html">Impressum</a><br>
+<a href="datenschutz.html">Datenschutz</a></div>
+</div></footer>
+<script src="rechner.js"></script>
+</body></html>
