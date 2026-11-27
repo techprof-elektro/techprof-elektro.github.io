@@ -55,4 +55,4 @@ nav{align-items:center}
 .dd.open .dd-menu{display:block}
 .dd-menu a{display:block;color:var(--ink);padding:8px 10px;border-radius:7px;font-size:15px;font-weight:500}
 .dd-menu a:hover{background:#EEF3FA;color:var(--navy);text-decoration:none}
-.trsel{background:var(--navy2);color:#fff;border:1px solid #3A4E75;border-radius:8px;padding:5px 8px;font-size:14px;font-weight:600;cursor:pointer}
+.trsel{order:-1;background:var(--gold);color:#231a00;border:2px solid var(--gold2);border-radius:8px;padding:7px 10px;font-size:15px;font-weight:800;cursor:pointer}
