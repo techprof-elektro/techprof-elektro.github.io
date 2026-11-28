@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Die Kreuzschaltung – eine Leuchte, drei Schalter | Lektion 10</title>
+<meta name="description" content="Lektion 10: Die Kreuzschaltung – ein Kreuzschalter zwischen zwei Wechselschaltern schaltet eine Leuchte von drei oder mehr Stellen. Mit Rechenbeispiel (180 W, 0,78 A, Spannungsfall 0,37 V) und DIN VDE 0100-460 / 0100-520 / 0100-410.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="langbar"><span class="lg-globe">🌐</span><a class="lg lg-on" href="#" onclick="return false">DE</a><a class="lg" target="_blank" rel="noopener" href="https://translate.google.com/translate?sl=de&tl=ar&u=https://techprof-elektro.github.io/kreuzschaltung.html">AR</a><a class="lg" target="_blank" rel="noopener" href="https://translate.google.com/translate?sl=de&tl=fr&u=https://techprof-elektro.github.io/kreuzschaltung.html">FR</a><a class="lg" target="_blank" rel="noopener" href="https://translate.google.com/translate?sl=de&tl=en&u=https://techprof-elektro.github.io/kreuzschaltung.html">EN</a><a class="lg" target="_blank" rel="noopener" href="https://translate.google.com/translate?sl=de&tl=tr&u=https://techprof-elektro.github.io/kreuzschaltung.html">TR</a></div></div>
+<header><div class="hwrap">
+<a class="logo" href="index.html">⚡ tech prof <span>électrique</span></a>
+<nav>
+<a href="index.html">Start</a>
+<div class="dd"><button type="button" class="dd-btn" onclick="this.parentElement.classList.toggle('open')">Rechner ▾</button><div class="dd-menu"><a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><a href="leistung.html">Leistung &amp; Strom</a><a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><a href="stromkosten.html">Stromkosten</a></div></div>
+<div class="dd"><button type="button" class="dd-btn" onclick="this.parentElement.classList.toggle('open')">Lektionen ▾</button><div class="dd-menu"><a href="einfacher-stromkreis.html">Lektion 1: Der Stromkreis</a><a href="spannung-strom-widerstand.html">Lektion 2: Spannung, Strom, Widerstand</a><a href="fuenf-sicherheitsregeln.html">Lektion 5: Die 5 Sicherheitsregeln</a><a href="gefahren-des-elektrischen-stroms.html">Lektion 6: Gefahren des elektrischen Stroms</a><a href="schutzklassen-und-ip-schutzarten.html">Lektion 7: Schutzklassen und IP-Schutzarten</a><a href="ausschaltung.html">Lektion 8: Die Ausschaltung</a><a href="wechselschaltung.html">Lektion 9: Die Wechselschaltung</a><a href="kreuzschaltung.html">Lektion 10: Die Kreuzschaltung</a></div></div>
+<a href="downloads.html">Downloads</a>
+<a href="ueber-mich.html">Über mich</a>
+<a href="kontakt.html">Kontakt</a>
+
+</nav></div></header>
+
+<main><article>
+<h1>Die Kreuzschaltung – Lektion 10</h1>
+<p class="sub">Drei Schalter, eine Lampe – so geht's: Ein Kreuzschalter zwischen zwei Wechselschaltern schaltet eine Leuchte von drei oder mehr Stellen aus – Flur mit drei Türen, Treppenhaus über drei Stockwerke.</p>
+<p>Video zur Lektion: <a href="https://youtu.be/E8bNmfU_GDE" rel="noopener">Die Kreuzschaltung einfach erklärt – Lampe von drei Stellen schalten | Lektion 10</a> (29. November 2026, 19:00). Normen: DIN VDE 0100-460, DIN VDE 0100-520, DIN VDE 0100-410.</p>
+
+<h2>Die Wechselschaltung – und ihre Grenze</h2>
+<p>Aus Lektion 9 kennt ihr die Wechselschaltung: Zwei Wechselschalter, zwei Korrespondierende, eine Leuchte – schaltbar von zwei Stellen. Das reicht für den Flur mit zwei Türen. Aber was ist mit dem Flur mit drei Türen? Mit dem Treppenhaus über drei Stockwerke, wo auf jedem Stockwerk ein Schalter sitzen soll? Ein dritter Wechselschalter hilft nicht weiter: Die Wechselschaltung hat genau zwei Enden – und dazwischen braucht es ein anderes Bauteil. Es heißt <b>Kreuzschalter</b>, und die Schaltung, die damit entsteht, heißt <b>Kreuzschaltung</b>.</p>
+<p>Der Kreuzschalter hat vier Klemmen statt drei. Er sitzt in der Mitte zwischen den beiden Wechselschaltern und macht genau eine Sache: Er vertauscht die beiden Korrespondierenden – oder lässt sie gerade durch. Jeder Schaltvorgang am Kreuzschalter wechselt den Zustand der Lampe – an oder aus – genau wie an den beiden Wechselschaltern. Und das Beste: Jeder weitere Kreuzschalter bringt eine weitere Schaltstelle. Vier, fünf, sechs Schalter – kein Problem, einfach einen Kreuzschalter mehr dazwischen setzen.</p>
+
+<h2>So ist sie verdrahtet</h2>
+<p>Der Außenleiter <b>L</b> geht auf die gemeinsame Klemme des ersten Wechselschalters. Von dessen beiden Wechselkontakten führen zwei Adern – die Korrespondierenden – zum Kreuzschalter in der Mitte. Der Kreuzschalter kreuzt sie oder lässt sie gerade durch, und von dort geht es weiter zum zweiten Wechselschalter. Dessen gemeinsame Klemme geht zur Lampe, und über den Neutralleiter <b>N</b> zurück zur Quelle. Der Schutzleiter <b>PE</b> (grün-gelb) geht direkt zur Leuchte und wird nie geschaltet.</p>
+<p>Weil der Kreuzschalter in der Mitte sitzt, braucht die Schaltung fünf Adern zwischen den Schaltern: zwei Korrespondierende hin, zwei zurück – und die Dauerphase, wenn unter einem Schalter zusätzlich eine Steckdose sitzen soll. Darum wird für die Kreuzschaltung ein Kabel <b>NYM-J 5 × 1,5 mm²</b> verlegt. Die Aderfarben: braun, schwarz und grau sind Außenleiter-Adern, blau ist der Neutralleiter, grün-gelb ausschließlich der Schutzleiter. Die Logik bleibt die gleiche wie bei der Wechselschaltung: Nur wenn der Weg von L über die Schalter bis zur Lampe geschlossen ist, leuchtet sie. Jeder Schalter – Wechselschalter wie Kreuzschalter – kann den Weg unterbrechen oder schließen, egal wie die anderen stehen.</p>
+
+<h2>Rechnen wir: Drei Lampen mit je 60 W im Flur</h2>
+<p>Drei Lampen mit je 60 Watt – zusammen 180 Watt an 230 Volt. Der Strom ist Leistung durch Spannung:</p>
+<div class="formel">I = P / U = 180 W / 230 V = 0,78 A</div>
+<p>Ein Kabel NYM-J 5 × 1,5 mm² trägt bis zu 16 Ampere – also mehr als das Zwanzigfache des Betriebsstroms. Und der Spannungsfall über 20 Meter Leitung? Der Widerstand von 40 Metern Ader (Hin- und Rückweg) liegt bei etwa 0,47 Ohm, der Spannungsfall also bei etwa 0,37 Volt – rund 0,16 Prozent, weit unter der 3-Prozent-Regel. Bei einer Lichtschaltung ist der Spannungsfall praktisch nie ein Thema – die Leitung ist völlig ausreichend.</p>
+
+<h2>Was sagt die Norm dazu?</h2>
+<p><b>DIN VDE 0100-460:</b> Schaltgeräte müssen den Außenleiter unterbrechen – der Neutralleiter darf nicht einpolig geschaltet werden. Die Kreuzschaltung erfüllt diese Regel: Geschaltet wird immer der Außenleiter, der Neutralleiter läuft ungeschaltet zur Lampe.</p>
+<p><b>DIN VDE 0100-520:</b> Die Adern sind nach Farben zuzuordnen – braun, schwarz und grau für die Außenleiter, blau für den Neutralleiter, grün-gelb ausschließlich für den Schutzleiter. Bei fünfadrigen Leitungen wie NYM-J 5 × 1,5 mm² gilt: Die Korrespondierenden sind Außenleiter-Adern und führen im eingeschalteten Zustand die volle Phase.</p>
+<p><b>DIN VDE 0100-410 (Schutz gegen elektrischen Schlag):</b> Im ausgeschalteten Zustand darf an der Lampenfassung keine gefährliche Spannung anliegen. Bei der Kreuzschaltung ist das erfüllt: Ist die Lampe aus, ist die Fassung über den geschalteten Außenleiter stromlos.</p>
+
+<h2>Nicht verwechseln: Sparwechselschaltung und Stromstoßschaltung</h2>
+<ul>
+<li><b>Sparwechselschaltung</b> – spart eine Ader, weil an beiden Schaltern die Dauerphase anliegt und nur eine Korrespondierende verbindet. Erlaubt, aber nur für die Nachrüstung sinnvoll – und sie lässt sich <b>nicht</b> mit einem Kreuzschalter erweitern. Wer drei Schaltstellen braucht, muss die normale Wechselschaltung mit zwei Korrespondierenden verlegen.</li>
+<li><b>Stromstoßschaltung</b> – die Alternative für viele Schaltstellen: Ein Impulsrelais (zum Beispiel Eltako S12-100) im Verteiler, an jeder Stelle nur ein Taster. Ein Tastendruck schaltet ein, der nächste aus. Ab etwa vier Schaltstellen ist sie oft die praktischere Lösung – sie war das Thema des Praxis-Shorts vom 29. November.</li>
+<li><b>Wechselschaltung</b> – die Basis: zwei Schalter, zwei Korrespondierende. Die Kreuzschaltung baut genau darauf auf und erweitert sie um beliebig viele Schaltstellen.</li>
+</ul>
+
+<div class="tip"><b>Merksatz:</b> Zwei Wechselschalter außen, ein Kreuzschalter in der Mitte – und jede weitere Schaltstelle ist ein weiterer Kreuzschalter dazwischen. Geschaltet wird immer L, nie N allein.</div>
+
+<h2>Übungsaufgabe</h2>
+<p>Wo braucht ihr drei Schaltstellen – im Flur, im Treppenhaus oder im Schlafzimmer? Schreib deine Antwort in die Kommentare unter dem Video. In der nächsten Lektion geht es weiter: Lektion 11 – die Stromstoßschaltung, der Taster, der sich den Zustand merkt.</p>
+
+<div class="tip"><b>🎬 Diese Lektion als Video ansehen:</b><br>
+Auf Facebook bei <a href="https://www.facebook.com/286993421170354/posts/928374916935977" rel="noopener">tech prof électrique</a><br>
+Auf YouTube bei <a href="https://youtu.be/E8bNmfU_GDE" rel="noopener">tech prof</a></div>
+
+<div class="faq">
+<h2>Häufige Fragen</h2>
+<h3>Wie viele Kreuzschalter kann man in eine Schaltung einbauen?</h3>
+<p>Beliebig viele: Jeder Kreuzschalter zwischen den beiden Wechselschaltern bringt eine weitere Schaltstelle. In der Praxis sind es meist ein oder zwei Kreuzschalter – drei Schaltstellen oder vier. Mehr wird unübersichtlich, dann ist die Stromstoßschaltung mit Tastern die bessere Wahl.</p>
+<h3>Kann man einen Kreuzschalter auch als Wechselschalter verwenden?</h3>
+<p>Ja, das geht: Ein Kreuzschalter lässt sich als Wechselschalter beschalten, indem man zwei seiner vier Klemmen unbenutzt lässt. Umgekehrt geht es nicht – ein Wechselschalter kann keinen Kreuzschalter ersetzen, weil ihm die vierte Klemme fehlt.</p>
+</div>
+<div class="warn"><b>Wichtiger Hinweis:</b> Diese Seite dient der Ausbildung und ersetzt keine Unterweisung. Arbeiten an elektrischen Anlagen dürfen nur von Elektrofachkräften ausgeführt werden. Maßgeblich sind immer die aktuellen DIN-VDE-Normen, die Angaben der Hersteller und die örtlichen TAB des Netzbetreibers.</div></article></main>
+<footer><div class="fwrap">
+<div class="col"><h4>Rechner</h4>
+<a href="ohmsches-gesetz.html">Ohmsches Gesetz</a><br>
+<a href="leistung.html">Leistung &amp; Strom</a><br>
+<a href="spannungsfall-querschnitt.html">Spannungsfall &amp; Querschnitt</a><br>
+<a href="stromkosten.html">Stromkosten</a></div>
+<div class="col"><h4>Lektionen</h4>
+<a href="einfacher-stromkreis.html">Lektion 1: Stromkreis</a><br>
+<a href="spannung-strom-widerstand.html">Lektion 2: U, I, R</a><br>
+<a href="fuenf-sicherheitsregeln.html">Lektion 5: Sicherheitsregeln</a><br>
+<a href="gefahren-des-elektrischen-stroms.html">Lektion 6: Gefahren des Stroms</a><br>
+<a href="schutzklassen-und-ip-schutzarten.html">Lektion 7: Schutzklassen &amp; IP</a><br>
+<a href="ausschaltung.html">Lektion 8: Ausschaltung</a><br>
+<a href="wechselschaltung.html">Lektion 9: Wechselschaltung</a><br>
+<a href="kreuzschaltung.html">Lektion 10: Kreuzschaltung</a></div>
+<div class="col"><h4>Lektionen &amp; Downloads</h4>
+<a href="einfacher-stromkreis.html">Lektion 1: Der Stromkreis</a><br>
+<a href="spannung-strom-widerstand.html">Lektion 2: U, I, R</a><br>
+<a href="fuenf-sicherheitsregeln.html">Lektion 5: Sicherheitsregeln</a><br>
+<a href="gefahren-des-elektrischen-stroms.html">Lektion 6: Gefahren des Stroms</a><br>
+<a href="schutzklassen-und-ip-schutzarten.html">Lektion 7: Schutzklassen &amp; IP</a><br>
+<a href="ausschaltung.html">Lektion 8: Die Ausschaltung</a><br>
+<a href="wechselschaltung.html">Lektion 9: Die Wechselschaltung</a><br>
+<a href="kreuzschaltung.html">Lektion 10: Die Kreuzschaltung</a><br>
+<a href="downloads.html">Downloads (PDF)</a></div>
+<div class="col"><h4>Projekt</h4>
+<a href="ueber-mich.html">Über mich</a><br>
+<a href="kontakt.html">Kontakt</a><br>
+<a href="https://www.facebook.com/profile.php?id=61558968189552" rel="noopener">Facebook-Seite</a><br>
+<a href="https://www.youtube.com/@tech-prof-electric" rel="noopener">YouTube-Kanal</a><br>
+<a href="https://www.tiktok.com/@tech_prof_elekterik" rel="noopener">TikTok-Kanal</a></div>
+<div class="col"><h4>Rechtliches</h4>
+<a href="impressum.html">Impressum</a><br>
+<a href="datenschutz.html">Datenschutz</a></div>
+</div></footer>
+<script src="rechner.js"></script>
+</body></html>
